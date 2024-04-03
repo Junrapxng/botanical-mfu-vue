@@ -2,13 +2,9 @@
   <div>
     <nav class="navbar navbar-expand-sm navbar-dark topnav fixed-top">
       <div class="container-fluid">
-        <img
-          class="navbar-brand"
-          id="logo"
-          style="width: 5%"
-          src="../assets/img/logoP.png"
-          alt=""
-        />
+        <router-link to="/" exact class="navbar-brand" id="logo">
+          <img style="width: 4em" src="../assets/img/logoP.png" alt="logo" />
+        </router-link>
 
         <div class="title">
           <ul class="rows">
@@ -18,14 +14,11 @@
         </div>
 
         <div class="navbar-collapse">
-          <!-- <ul class="navbar-nav me-auto"></ul> -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="/" class="nav-link fa fa-home"
-                ><font-awesome-icon icon="fa-solid fa-house"
-              /></a>
+            <li class="nav-item" v-for="item in items" :key="item.icon">
+              <a :href="item.url" class="nav-link fa"><font-awesome-icon :icon="item.icon" /></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="https://www.facebook.com/mfubotanicalgarden/" class="nav-link fa fa-facebook"
                 ><font-awesome-icon icon="fa-brands fa-facebook" />
               </a>
@@ -47,7 +40,7 @@
               <a href="/login" class="nav-link fa fa-user"
                 ><font-awesome-icon icon="fa-solid fa-user"
               /></a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -55,7 +48,34 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+export default {
+  data: () => ({
+    items: [
+      {
+        icon: 'fa-solid fa-house',
+        url: '/'
+      },
+      {
+        icon: 'fa-brands fa-facebook',
+        url: 'https://www.facebook.com/mfubotanicalgarden/'
+      },
+      {
+        icon: 'fa-brands fa-instagram',
+        url: 'https://www.instagram.com/mfubotanicalgarden/?igshid=YTQwZjQ0NmI0OA%3D%3D&fbclid=IwAR1anPVbT5gPd-lkbHqhSx_l6bVgT5AT8T6OQa0aHtZ9TshmEY5beBipDTM'
+      },
+      {
+        icon: 'fa-solid fa-earth-asia',
+        url: 'https://bg.mfu.ac.th/bg-index.html'
+      },
+      {
+        icon: 'fa-solid fa-user',
+        url: 'https://bg.mfu.ac.th/bg-index.html'
+      }
+    ]
+  })
+}
+</script>
 
 <style scoped>
 .topnav {

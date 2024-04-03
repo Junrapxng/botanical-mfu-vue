@@ -12,8 +12,8 @@ import Button from '@/components/Button.vue'
   </main>
 </template>
 
-<style>
-body {
+<style scoped>
+main {
   margin: 0;
   padding: 0;
   background: url('../assets/img/bg02.jpg') center/cover no-repeat;

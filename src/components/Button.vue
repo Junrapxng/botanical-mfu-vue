@@ -1,14 +1,14 @@
 <template>
   <div class="container-fluid">
     <div id="butshow01">
-      <button class="but1 btn btn-outline-success" onclick="redirectToPath('/search');">
+      <button class="but1 btn btn-outline-success" @click="$router.push('/search_plant')">
         <ul class="rows01">
           <li>ฐานข้อมูลพรรณไม้</li>
           <li>Plant Database</li>
         </ul>
       </button>
 
-      <button class="but2 btn btn-outline-success" onclick="redirectToPath('/searchTwo');">
+      <button class="but2 btn btn-outline-success" @click="$router.push('/search_herbarium')">
         <ul class="rows02">
           <li>ฐานข้อมูลตัวอย่างพรรณไม้</li>
           <li>Herbarium Database</li>
