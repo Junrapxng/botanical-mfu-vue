@@ -29,13 +29,17 @@
 </template>
 
 <script>
-
+export default {
+  name: 'Footer'
+}
 </script>
 
 <style scoped>
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 10%;
   background-color: #13564b;
@@ -44,6 +48,20 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/* footer {
+  position: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #13564b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .rowsfoot {
   font-family: 'Kanit', sans-serif;

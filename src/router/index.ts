@@ -21,6 +21,21 @@ const router = createRouter({
       path: '/search_herbarium',
       name: 'search_herbarium',
       component: () => import('../views/Search_Herbarium.vue')
+    },
+    {
+      path: '/display_plant/:query',
+      name: 'display_plant',
+      component: () => import('../views/Display_Plant.vue')
+    },
+    {
+      path: '/display_herbarium',
+      name: 'display_herbarium',
+      component: () => import('../views/Display_Herbarium.vue')
+    },
+    {
+      path: '/detail_plant',
+      name: 'detail_plant',
+      component: () => import('../views/Detail_Plant.vue')
     }
   ]
 })

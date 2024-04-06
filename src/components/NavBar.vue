@@ -107,4 +107,26 @@ export default {
 .fa:hover {
   opacity: 0.7;
 }
+
+/* Media queries for different screen sizes: */
+@media (max-width: 768px) {
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .fa {
+    font-size: 1rem;
+    display: none;  
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
 </style>

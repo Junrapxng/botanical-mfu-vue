@@ -24,10 +24,11 @@ export default {}
 
 <style scoped>
 #butshow01 {
+  padding-top: 30%;
   display: flex;
-  position: fixed;
-  bottom: 0;
-  padding-bottom: 10%;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* padding-bottom: 10%; */
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -64,7 +65,7 @@ export default {}
   margin-left: 1em;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 20%;
+  width: 22%;
   height: 10em;
   border-radius: 3em;
   border: 4px solid #13564b;

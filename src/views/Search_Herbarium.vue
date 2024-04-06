@@ -26,7 +26,7 @@ import Footer from '@/components/Footer.vue'
 
           <div>
             <div class="inputsearch">
-              <form action="/displayTwo" method="post">
+              <form @submit.prevent="handleSubmit">
                 <div>
                   <input class="insearch" v-model="mfluNo" placeholder="MFLU No." />
                 </div>
@@ -36,7 +36,7 @@ import Footer from '@/components/Footer.vue'
                 </div>
 
                 <div>
-                  <select class="insearch" v-model="selected" text="MFLU No.">
+                  <select class="insearch" v-model="FamilyName" text="FamilyName">
                     <option disabled value="">Please select FamilyName</option>
                     <option>A</option>
                     <option>B</option>
@@ -60,11 +60,28 @@ import Footer from '@/components/Footer.vue'
     </div>
   </section>
 
-  <Footer />
+  <Footer></Footer>
 </template>
-
 <script>
-export default {}
+export default {
+  components: {
+    NavBar
+    // Button2,
+    // Footer
+  },
+  data() {
+    return {
+      keyword: ''
+    }
+  },
+  methods: {
+    handleSubmit() {
+      this.$router.push({
+        path: `/display_herbarium/${this.keyword}`
+      })
+    }
+  }
+}
 </script>
 
 <style scoped>
