@@ -2,7 +2,7 @@
   <div>
     <footer style="font-family: 'Kanit', sans-serif">
       <div>
-        <ul class="rowsfoot" style="word-spacing: 2px; list-style: none">
+        <ul class="rowsfoot" style="list-style: none">
           <li>ติดต่อเรา</li>
           <li>
             สวนพฤกษศาสตร์มหาวิทยาลัยแม่ฟ้าหลวง เฉลิมพระเกียรติ 80 พรรษา มหาราชา 333 ม.1 ต.ท่าสุด
@@ -15,7 +15,7 @@
       </div>
 
       <div>
-        <ul class="rowsfoot" style="word-spacing: 2px; list-style: none">
+        <ul class="rowsfoot" style="list-style: none">
           <li>Contact</li>
           <li>
             Mae Fah Laung University Botanical Garden 333 Moo 1 Thasud Subdistrict, Mueang District,
@@ -35,22 +35,8 @@ export default {
 </script>
 
 <style scoped>
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10%;
-  background-color: #13564b;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* footer {
-  position: flex;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -63,9 +49,21 @@ footer {
   justify-content: center;
 } */
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #13564b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .rowsfoot {
   font-family: 'Kanit', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   padding-top: 15px;
   list-style-type: none;
 }
