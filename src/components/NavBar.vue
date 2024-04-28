@@ -81,6 +81,9 @@ export default {
 .topnav {
   background-color: #13564b;
 }
+.fixed-top {
+  height: 13%;
+}
 
 .title {
   font-family: 'Kanit', sans-serif;
@@ -116,7 +119,7 @@ export default {
 
   .fa {
     font-size: 1rem;
-    display: none;  
+    display: none;
   }
 
   .navbar-toggler {
