@@ -93,8 +93,8 @@ export default {
 }
 
 .focus {
-  height: auto;
-  margin-top: 6em;
+  height: 80vh;
+  margin-top: 5em;
   background-image: url(../assets/img/but02.jpg);
   background-repeat: no-repeat;
   background-size: cover;

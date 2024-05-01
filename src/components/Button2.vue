@@ -26,14 +26,14 @@
 
 <script>
 export default {
-  name: 'ButtonItem',
+  name: 'ButtonItem'
 }
 </script>
 
 <style scoped>
 #butshow01 {
   margin-top: 1em;
-  margin-bottom: 6em;
+  margin-bottom: 1em;
   width: 100%;
   display: flex;
   align-items: center;

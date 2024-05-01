@@ -20,13 +20,13 @@
 
 <script>
 export default {
-  name: 'BUTTON',
+  name: 'BUTTON'
 }
 </script>
 
 <style scoped>
 #butshow01 {
-  padding-top: 30%;
+  padding-top: 20%;
   display: flex;
   /* position: fixed; */
   /* bottom: 0; */

@@ -35,19 +35,9 @@ export default {
 </script>
 
 <style scoped>
-/* footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10%;
-  background-color: #13564b;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+* {
+  margin-bottom: 0;
+}
 
 footer {
   position: fixed;
@@ -65,6 +55,7 @@ footer {
   font-family: 'Kanit', sans-serif;
   font-size: 11px;
   padding-top: 15px;
+  padding-bottom: 8px;
   list-style-type: none;
 }
 </style>
