@@ -19,7 +19,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'BUTTON',
+}
 </script>
 
 <style scoped>
@@ -65,7 +67,7 @@ export default {}
   margin-left: 1em;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 22%;
+  width: 23%;
   height: 10em;
   border-radius: 3em;
   border: 4px solid #13564b;

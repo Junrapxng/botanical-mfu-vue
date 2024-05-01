@@ -25,7 +25,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'ButtonItem',
+}
 </script>
 
 <style scoped>
